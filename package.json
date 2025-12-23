@@ -18,6 +18,7 @@
     "eslint": "^9.0.0",
     "gsap": "^3.13.0",
     "nuxt": "^4.2.1",
+    "tailwindcss": "^4.1.18",
     "three": "^0.181.2",
     "vue": "^3.5.25",
     "vue-router": "^4.6.3"
@@ -29,5 +30,6 @@
     "@oxc-transform/binding-darwin-arm64": "^0.101.0",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3"
-  }
+  },
+  "packageManager": "pnpm@8.15.5+sha1.a58c038faac410c947dbdb93eb30994037d0fce2"
 }

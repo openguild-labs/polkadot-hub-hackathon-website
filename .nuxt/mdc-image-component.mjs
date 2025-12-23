@@ -1,0 +1,1 @@
+export { default } from "/Users/chungquantin/Developer/polkadot-hub-hackathon-website/node_modules/.pnpm/@nuxt+image@2.0.0/node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue"
