@@ -1,0 +1,33 @@
+{
+  "name": "polkadot-hub-hackathon",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "1.11.0",
+    "@nuxt/image": "2.0.0",
+    "@nuxt/ui": "4.2.1",
+    "@nuxtjs/mdc": "0.19.1",
+    "@types/three": "^0.181.0",
+    "eslint": "^9.0.0",
+    "gsap": "^3.13.0",
+    "nuxt": "^4.2.1",
+    "three": "^0.181.2",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.80",
+    "@oxc-minify/binding-darwin-arm64": "^0.101.0",
+    "@oxc-parser/binding-darwin-arm64": "^0.101.0",
+    "@oxc-transform/binding-darwin-arm64": "^0.101.0",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
+  }
+}

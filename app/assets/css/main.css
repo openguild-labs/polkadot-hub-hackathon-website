@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@font-face {
+  font-family: "Minecraftia";
+  src: url("/fonts/minecraftia.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VCR OSD Mono";
+  src:
+    url("/fonts/VCROSDMono.woff2") format("woff2"),
+    url("/fonts/VCROSDMono.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-minecraftia: "Minecraftia", monospace;
+  --font-vcr-osd-mono: "VCR OSD Mono", monospace;
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  --font-space-mono: "Space Mono", monospace;
+
+  --color-primary: #5816cf;
+  --color-secondary: #ff195f;
+  --color-tertiary: #e6f1ff;
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-border: #e0e0e0;
+  --color-muted: #f0f0f0;
+}
+
+@layer base {
+  body {
+    @apply font-space-grotesk bg-white text-black font-normal;
+  }
+
+  h1 {
+    @apply font-minecraftia;
+    font-size: clamp(52px, calc(52px + (100vw - 576px) * 48 / 864), 100px);
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-vcr-osd-mono;
+  }
+
+  h2 {
+    font-size: clamp(20px, calc(20px + (100vw - 576px) * 14 / 864), 38px);
+  }
+
+  code,
+  pre {
+    @apply font-space-mono;
+  }
+}
+
+@layer utilities {
+  .pixelated-image {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+}
