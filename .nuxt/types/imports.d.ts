@@ -144,6 +144,7 @@ declare global {
   const useModel: typeof import('vue').useModel
   const useNuxtApp: typeof import('../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/nuxt').useNuxtApp
   const useNuxtData: typeof import('../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/composables/asyncData').useNuxtData
+  const useNuxtDevTools: typeof import('../../node_modules/.pnpm/@nuxt+devtools@3.1.1_vite@7.3.0_vue@3.5.26/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools').useNuxtDevTools
   const useOverlay: typeof import('../../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/composables/useOverlay').useOverlay
   const usePixelatedReveal: typeof import('../../app/composables/usePixelatedReveal').usePixelatedReveal
   const usePortal: typeof import('../../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/composables/usePortal').usePortal
@@ -373,6 +374,7 @@ declare module 'vue' {
     readonly useModel: UnwrapRef<typeof import('vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
+    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+devtools@3.1.1_vite@7.3.0_vue@3.5.26/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly useOverlay: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/composables/useOverlay')['useOverlay']>
     readonly usePixelatedReveal: UnwrapRef<typeof import('../../app/composables/usePixelatedReveal')['usePixelatedReveal']>
     readonly usePortal: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/composables/usePortal')['usePortal']>

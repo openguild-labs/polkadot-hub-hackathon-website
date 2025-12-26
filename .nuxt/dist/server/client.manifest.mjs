@@ -1,0 +1,1 @@
+export { default } from "file:///Users/chungquantin/Developer/polkadot-hub-hackathon-website/node_modules/.pnpm/@nuxt+vite-builder@4.2.2_eslint@9.39.2_nuxt@4.2.2_typescript@5.9.3_vue@3.5.26/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

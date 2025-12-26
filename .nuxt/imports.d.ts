@@ -53,3 +53,4 @@ export { useImage } from '../node_modules/.pnpm/@nuxt+image@2.0.0/node_modules/@
 export { flatUnwrap as unwrapSlot } from '../node_modules/.pnpm/@nuxtjs+mdc@0.19.1/node_modules/@nuxtjs/mdc/dist/runtime/utils/node';
 export { parseMarkdown } from '../node_modules/.pnpm/@nuxtjs+mdc@0.19.1/node_modules/@nuxtjs/mdc/dist/runtime/parser';
 export { stringifyMarkdown } from '../node_modules/.pnpm/@nuxtjs+mdc@0.19.1/node_modules/@nuxtjs/mdc/dist/runtime/stringify';
+export { useNuxtDevTools } from '../node_modules/.pnpm/@nuxt+devtools@3.1.1_vite@7.3.0_vue@3.5.26/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';

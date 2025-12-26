@@ -9,22 +9,27 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/revive-payload.client.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/head/runtime/plugins/unhead.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/router.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/payload.client.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/browser-devtools-timing.client.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/dev-server-logs.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/navigation-repaint.client.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/check-outdated-build.client.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/revive-payload.server.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/chunk-reload.client.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@3.1.1_vite@7.3.0_vue@3.5.26/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.server.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@3.1.1_vite@7.3.0_vue@3.5.26/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.client.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/plugins/colors.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+icon@2.1.1_vite@7.3.0_vue@3.5.26/node_modules/@nuxt/icon/dist/runtime/plugin.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/warn.dev.server.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/plugins/check-if-layout-used.js")> &
   InjectionType<typeof import("../../app/plugins/gsap.client")>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
 
   interface NuxtAppLiterals {
-    pluginName: 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt:payload' | 'nuxt:revive-payload:server' | 'nuxt:chunk-reload' | 'nuxt:global-components' | '@nuxt/icon'
+    pluginName: 'vue-devtools-client' | 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt:browser-devtools-timing' | 'nuxt:revive-payload:server' | 'nuxt:chunk-reload' | 'nuxt:global-components' | '@nuxt/icon' | 'nuxt:checkIfLayoutUsed'
   }
 }
 
