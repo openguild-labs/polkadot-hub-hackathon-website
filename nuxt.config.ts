@@ -13,7 +13,8 @@ export default defineNuxtConfig({
       meta: [
         {
           name: "description",
-          content: "A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub",
+          content:
+            "A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub",
         },
         // Open Graph / Facebook
         {
@@ -26,11 +27,12 @@ export default defineNuxtConfig({
         },
         {
           property: "og:description",
-          content: "A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub",
+          content:
+            "A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub",
         },
         {
           property: "og:image",
-          content: "/og-image.png",
+          content: "/images/og-thumbnail.jpg",
         },
         {
           property: "og:image:width",
@@ -55,11 +57,12 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:description",
-          content: "A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub",
+          content:
+            "A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub",
         },
         {
           name: "twitter:image",
-          content: "/og-image.png",
+          content: "/images/og-thumbnail.jpg",
         },
       ],
       link: [
@@ -115,4 +118,4 @@ export default defineNuxtConfig({
       },
     ],
   },
-})
+});
