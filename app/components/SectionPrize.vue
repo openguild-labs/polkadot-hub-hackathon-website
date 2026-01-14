@@ -16,7 +16,7 @@
       <div class="bg-black p-5 text-white">
         <p class="text-xl font-vcr-osd-mono uppercase mb-4">TOTAL PRIZEPOOL</p>
         <div class="mb-6 max-lg:hidden">
-          <NuxtImg src="/images/coin.png" alt="Coin" class="w-[140px] animate-pulse" />
+          <NuxtImg src="/images/logo.png" alt="Logo" class="w-[140px] animate-pulse" />
         </div>
         <div class="flex flex-row lg:gap-6 gap-4 lg:flex-col max-lg:items-end">
           <h3 class="text-7xl font-vcr-osd-mono">$30K</h3>

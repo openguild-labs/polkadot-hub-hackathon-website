@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "/images/logo.png",
+          content: "/images/og-thumbnail.jpg",
         },
         {
           property: "og:image:width",
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "/images/logo.png",
+          content: "/images/og-thumbnail.jpg",
         },
       ],
       link: [
@@ -70,18 +70,18 @@ export default defineNuxtConfig({
           rel: "icon",
           type: "image/png",
           sizes: "32x32",
-          href: "/logo.png",
+          href: "/images/logo.png",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "16x16",
-          href: "/logo.png",
+          href: "/images/logo.png",
         },
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
-          href: "/apple-touch-icon.png",
+          href: "/images/logo.png",
         },
       ],
     },
