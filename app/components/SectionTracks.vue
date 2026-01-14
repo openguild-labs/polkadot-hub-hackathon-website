@@ -1,18 +1,18 @@
 <template>
   <section id="tracks" class="py-8 lg:py-13 sm:px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-6">
-      <p class="text-secondary font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">TRACKS</p>
-      <h2 ref="titleText" class="text-primary">COMPETE ACROSS DIVERSE TRACKS</h2>
+      <p class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">TRACKS</p>
+      <h2 ref="titleText" class="text-black">COMPETE ACROSS DIVERSE TRACKS</h2>
     </div>
 
     <!-- Track Tabs -->
-    <UTabs :items="tabItems" color="secondary" size="xl" class="mb-15">
+    <UTabs :items="tabItems" color="neutral" size="xl" class="mb-15">
       <template #content="{ item }">
         <!-- Track Content - Two Column Layout -->
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] md:gap-8 gap-4 mt-8 px-6">
           <!-- Left Column - Track Info -->
           <div>
-            <h4 class="text-2xl text-primary font-space-grotesk font-medium sm:mb-4 mb-2">{{ item.title }}</h4>
+            <h4 class="text-2xl text-black font-space-grotesk font-medium sm:mb-4 mb-2">{{ item.title }}</h4>
             <ul v-if="Array.isArray(item.description)" class="list-disc pl-4">
               <li v-for="(desc, index) in item.description" :key="index">{{ desc }}</li>
             </ul>
@@ -24,13 +24,13 @@
             <div v-for="(prize, index) in prizes" :key="index" class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-4">
                 <div
-                  class="py-1 sm:px-4 px-2 flex items-center justify-center bg-secondary text-white font-vcr-osd-mono font-bold sm:text-2xl text-xl"
+                  class="py-1 sm:px-4 px-2 flex items-center justify-center bg-black text-white font-vcr-osd-mono font-bold sm:text-2xl text-xl"
                 >
                   {{ prize.place }}
                 </div>
                 <span class="text-lg">{{ prize.label }}</span>
               </div>
-              <div class="w-[50px] h-px bg-black"></div>
+              <div class="w-[50px] h-px bg-text"></div>
               <span class="font-medium text-xl">{{ prize.amount }}</span>
             </div>
           </div>

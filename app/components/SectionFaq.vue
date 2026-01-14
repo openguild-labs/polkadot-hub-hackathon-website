@@ -1,12 +1,20 @@
 <template>
   <section class="relative pt-16 lg:pt-24 px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-6">
-      <p class="text-secondary font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">FAQ</p>
-      <h2 ref="titleText" class="text-primary">FREQUENTLY ASKED QUESTIONS</h2>
+      <p
+        class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase"
+      >
+        FAQ
+      </p>
+      <h2 ref="titleText" class="text-black">FREQUENTLY ASKED QUESTIONS</h2>
     </div>
 
     <div class="max-w-3xl mx-auto faq-content">
-      <UAccordion :items="faqItems" trailing-icon="i-lucide-plus" :unmountOnHide="false">
+      <UAccordion
+        :items="faqItems"
+        trailing-icon="i-lucide-plus"
+        :unmountOnHide="false"
+      >
         <template #body="{ item }">
           <MDC :value="item.content ?? ''" />
         </template>
@@ -16,17 +24,17 @@
 </template>
 
 <script setup lang="ts">
-import { SplitText } from "gsap/SplitText"
-import { faqs } from "~/content/faqs"
+import { SplitText } from "gsap/SplitText";
+import { faqs } from "~/content/faqs";
 
-const titleText = useTemplateRef<HTMLElement>("titleText")
-const { animateText } = useTextScramble()
+const titleText = useTemplateRef<HTMLElement>("titleText");
+const { animateText } = useTextScramble();
 
 // Use FAQs directly from the TypeScript file
-const faqItems = computed(() => faqs)
+const faqItems = computed(() => faqs);
 
 onMounted(() => {
-  if (!titleText.value) return
+  if (!titleText.value) return;
 
   SplitText.create(titleText.value!, {
     type: "words",
@@ -34,11 +42,11 @@ onMounted(() => {
       self.words.forEach((word) => {
         animateText(word as HTMLElement, word.textContent, {
           trigger: titleText.value!,
-        })
-      })
+        });
+      });
     },
-  })
-})
+  });
+});
 </script>
 
 <style scoped>

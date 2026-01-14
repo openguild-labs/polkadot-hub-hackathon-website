@@ -1,8 +1,8 @@
 <template>
   <section id="prize" class="py-8 lg:py-13 lg:px-18 lg:pl-0!">
     <div class="text-center mb-6">
-      <p class="text-secondary font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">PRIZE</p>
-      <h2 ref="titleText" class="text-primary">PRIZE POOL AND AWARDS</h2>
+      <p class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">PRIZE</p>
+      <h2 ref="titleText" class="text-black">PRIZE POOL AND AWARDS</h2>
     </div>
 
     <div ref="prizeContainer" class="prize-card grid grid-cols-1 lg:grid-cols-3 lg:max-w-[90%] mx-auto lg:rounded-tr-[60px] overflow-hidden">
@@ -13,7 +13,7 @@
       </div>
 
       <!-- Right side - Prize Info -->
-      <div class="bg-primary p-5 text-white">
+      <div class="bg-black p-5 text-white">
         <p class="text-xl font-vcr-osd-mono uppercase mb-4">TOTAL PRIZEPOOL</p>
         <div class="mb-6 max-lg:hidden">
           <NuxtImg src="/images/coin.png" alt="Coin" class="w-[140px] animate-pulse" />

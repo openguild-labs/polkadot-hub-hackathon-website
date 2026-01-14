@@ -1,8 +1,8 @@
 <template>
   <section id="why-join" class="py-8 lg:py-13 px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-10">
-      <p class="text-secondary font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">JOIN NOW</p>
-      <h2 ref="titleText" class="text-primary">WHY JOINING HACKATHON 2026</h2>
+      <p class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">JOIN NOW</p>
+      <h2 ref="titleText" class="text-black">WHY JOINING HACKATHON 2026</h2>
       <p class="mt-2 sm:text-sm text-xs sm:max-w-lg max-w-xs mx-auto">
         An hackathon where skills prioritized assessment for Ecosystem Grants, including further acceleration program by OpenGuild.
       </p>
@@ -10,10 +10,10 @@
 
     <div ref="cardsContainer" class="grid grid-cols-1 md:grid-cols-3 gap-3">
       <div v-for="card in cards" :key="card.title" class="card-item rounded-tr-[30px] overflow-hidden h-full flex flex-col">
-        <div class="bg-secondary py-4 flex items-center justify-center">
+        <div class="bg-tertiary py-4 flex items-center justify-center">
           <NuxtImg :src="card.image" :alt="card.alt" class="w-full" />
         </div>
-        <div class="bg-primary p-6 pt-3 text-left text-white flex-1 flex flex-col">
+        <div class="bg-black p-6 pt-3 text-left text-white flex-1 flex flex-col">
           <p class="sm:text-lg mb-2">{{ card.title }}</p>
           <p class="sm:text-sm text-xs">{{ card.description }}</p>
         </div>

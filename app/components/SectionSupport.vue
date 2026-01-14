@@ -1,8 +1,12 @@
 <template>
   <section id="support" class="py-8 lg:py-13 px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-6">
-      <p class="text-secondary font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">WITH SUPPORT FROM</p>
-      <h2 ref="titleText" class="text-primary">STRATEGIC PARTNERS</h2>
+      <p
+        class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase"
+      >
+        WITH SUPPORT FROM
+      </p>
+      <h2 ref="titleText" class="text-black">STRATEGIC PARTNERS</h2>
     </div>
 
     <div class="grid grid-cols-3 md:grid-cols-6 gap-x-1 gap-y-4">
@@ -14,27 +18,37 @@
         class="group cursor-pointer flex flex-col items-center text-center gap-3"
       >
         <div
-          class="aspect-square md:p-8 p-6 w-full bg-linear-to-b group-hover:from-[#2D0B69] from-primary to-primary rounded-lg transition-all duration-300"
+          class="aspect-square md:p-8 p-6 w-full bg-black group-hover:bg-gray-800 rounded-lg transition-all duration-300"
         >
-          <NuxtImg :src="item.logo" :alt="item.label" class="w-full object-contain rounded-lg" />
+          <NuxtImg
+            :src="item.logo"
+            :alt="item.label"
+            class="w-full object-contain rounded-lg"
+          />
         </div>
 
-        <p class="text-secondary font-medium uppercase">{{ item.label }}</p>
+        <p class="text-black font-medium uppercase">{{ item.label }}</p>
       </a>
     </div>
 
     <div class="md:py-15 py-6" />
 
     <div class="text-center mb-6">
-      <h2 ref="communityTitleText" class="text-primary">COMMUNITY PARTNERS</h2>
+      <h2 ref="communityTitleText" class="text-black">COMMUNITY PARTNERS</h2>
     </div>
 
     <div class="grid grid-cols-3 md:grid-cols-6 gap-1">
-      <a v-for="item in communityPartners" :key="item.logo" :href="item.link" target="_blank" class="group aspect-square cursor-pointer">
+      <a
+        v-for="item in communityPartners"
+        :key="item.logo"
+        :href="item.link"
+        target="_blank"
+        class="group aspect-square cursor-pointer"
+      >
         <NuxtImg
           :src="item.logo"
           :alt="item.logo"
-          class="w-full h-full bg-linear-to-b group-hover:from-[#2D0B69] from-primary to-primary object-contain p-4 rounded-lg transition-all duration-300"
+          class="w-full h-full bg-black group-hover:bg-gray-800 object-contain p-4 rounded-lg transition-all duration-300"
         />
       </a>
     </div>
@@ -42,11 +56,11 @@
 </template>
 
 <script setup lang="ts">
-import { SplitText } from "gsap/SplitText"
+import { SplitText } from "gsap/SplitText";
 
-const titleText = useTemplateRef<HTMLElement>("titleText")
-const communityTitleText = useTemplateRef<HTMLElement>("communityTitleText")
-const { animateText } = useTextScramble()
+const titleText = useTemplateRef<HTMLElement>("titleText");
+const communityTitleText = useTemplateRef<HTMLElement>("communityTitleText");
+const { animateText } = useTextScramble();
 
 const strategicPartners = [
   {
@@ -117,7 +131,7 @@ const strategicPartners = [
     link: "https://x.com/Edgetributors",
     label: "Edgetributors SubDAO",
   },
-]
+];
 
 const communityPartners = [
   {
@@ -244,10 +258,10 @@ const communityPartners = [
     logo: "/images/R6_4.png",
     link: "#",
   },
-]
+];
 
 onMounted(() => {
-  if (!titleText.value) return
+  if (!titleText.value) return;
 
   SplitText.create(titleText.value!, {
     type: "words",
@@ -255,12 +269,12 @@ onMounted(() => {
       self.words.forEach((word) => {
         animateText(word as HTMLElement, word.textContent, {
           trigger: titleText.value!,
-        })
-      })
+        });
+      });
     },
-  })
+  });
 
-  if (!communityTitleText.value) return
+  if (!communityTitleText.value) return;
 
   SplitText.create(communityTitleText.value!, {
     type: "words",
@@ -268,9 +282,9 @@ onMounted(() => {
       self.words.forEach((word) => {
         animateText(word as HTMLElement, word.textContent, {
           trigger: communityTitleText.value!,
-        })
-      })
+        });
+      });
     },
-  })
-})
+  });
+});
 </script>

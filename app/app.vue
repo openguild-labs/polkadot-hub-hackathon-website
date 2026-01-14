@@ -1,19 +1,7 @@
 <template>
-  <UApp class="min-h-screen bg-white antialiased">
+  <UApp class="min-h-screen bg-background antialiased">
     <NuxtRouteAnnouncer />
     <div ref="appContent" class="relative" style="opacity: 0">
-      <!-- Fallback grayscale image for browsers without WebGL -->
-      <NuxtImg
-        ref="bgMapImage"
-        src="/images/colored-map.png"
-        alt="Colored Map"
-        class="fixed top-1/2 right-0 w-[85vw] object-contain z-[-1] -translate-y-1/2"
-        loading="eager"
-      />
-
-      <!-- <div class="absolute top-0 right-0 w-2/3 z-[-1] lg:hidden overflow-hidden">
-        <NuxtImg src="/images/footer-mobile.png" alt="Colored Map" class="w-full h-full translate-x-20" loading="eager" />
-      </div> -->
 
       <div class="grid grid-cols-24">
         <button
@@ -56,7 +44,7 @@
                   color="neutral"
                   icon="i-fa-github-square"
                   size="xl"
-                  class="text-[#666]! hover:text-black! bg-[unset]!"
+                  class="text-[#666]! hover:text-primary! bg-[unset]!"
                 />
                 <UButton
                   to="https://discord.gg/kHDZtykSx2"
@@ -64,7 +52,7 @@
                   color="neutral"
                   icon="i-bi-discord"
                   size="xl"
-                  class="text-[#666]! hover:text-black! bg-[unset]!"
+                  class="text-[#666]! hover:text-primary! bg-[unset]!"
                 />
                 <UButton
                   to="https://x.com/openguildwtf"
@@ -72,7 +60,7 @@
                   color="neutral"
                   icon="i-fa6-brands-square-x-twitter"
                   size="xl"
-                  class="text-[#666]! hover:text-black! bg-[unset]!"
+                  class="text-[#666]! hover:text-primary! bg-[unset]!"
                 />
               </div>
 
@@ -90,7 +78,6 @@
 import { gsap } from "gsap"
 
 const appContent = useTemplateRef<HTMLElement>("appContent")
-const bgMapImage = useTemplateRef<{ imgEl: HTMLImageElement }>("bgMapImage")
 
 // App fade-in animation duration (in seconds)
 const APP_FADE_IN_DURATION = 1
@@ -118,30 +105,6 @@ onMounted(() => {
     duration: APP_FADE_IN_DURATION,
     ease: "power2.out",
     delay: APP_FADE_IN_DELAY,
-  })
-
-  const connectSection = document.querySelector("#connect")
-  if (!connectSection || !bgMapImage.value) return
-
-  gsap.set(bgMapImage.value.imgEl, {
-    opacity: 0.15,
-    filter: "grayscale(100%)",
-  })
-
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#connect",
-      start: "top 50%",
-      end: "bottom 50%",
-      toggleActions: "play reverse play reverse",
-    },
-  })
-
-  tl.to(bgMapImage.value.imgEl, {
-    opacity: 0.7,
-    filter: "grayscale(0%)",
-    duration: 0.5,
-    ease: "power2.inOut",
   })
 })
 </script>

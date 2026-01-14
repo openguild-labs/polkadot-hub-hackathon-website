@@ -595,11 +595,11 @@ const appConfig0 = defineAppConfig({
       variants: {
         active: {
           true: {
-            childLink: "text-secondary"
+            childLink: "text-black"
           },
           false: {
             link: "text-black",
-            childLink: ["hover:text-secondary", "transition-colors before:transition-colors"]
+            childLink: ["hover:text-gray-600", "transition-colors before:transition-colors"]
           }
         }
       },
@@ -609,7 +609,7 @@ const appConfig0 = defineAppConfig({
           active: false,
           variant: "pill",
           class: {
-            link: ["hover:text-secondary", "hover:font-bold", "transition-colors before:transition-colors"]
+            link: ["hover:text-gray-600", "hover:font-bold", "transition-colors before:transition-colors"]
           }
         },
         {
@@ -617,7 +617,7 @@ const appConfig0 = defineAppConfig({
           variant: "pill",
           active: true,
           class: {
-            link: "text-secondary font-bold"
+            link: "text-black font-bold"
           }
         }
       ],
@@ -642,12 +642,12 @@ const appConfig0 = defineAppConfig({
         {
           color: "primary",
           variant: "solid",
-          class: "text-white hover:bg-linear-to-r from-primary to-[#2D0B69] transition-all ease-linear duration-300"
+          class: "text-white hover:bg-linear-to-r from-primary to-[#006064] transition-all ease-linear duration-300"
         },
         {
           color: "secondary",
           variant: "solid",
-          class: "text-white hover:bg-linear-to-r from-secondary to-[#990F39] transition-all ease-linear duration-300"
+          class: "text-white hover:bg-linear-to-r from-secondary to-[#004d40] transition-all ease-linear duration-300"
         }
       ],
       defaultVariants: {
@@ -659,7 +659,7 @@ const appConfig0 = defineAppConfig({
     tabs: {
       slots: {
         list: "p-0",
-        trigger: "font-vcr-osd-mono cursor-pointer data-[state=inactive]:text-black hover:data-[state=inactive]:not-disabled:text-secondary"
+        trigger: "font-vcr-osd-mono cursor-pointer data-[state=inactive]:text-black hover:data-[state=inactive]:not-disabled:text-gray-600"
       },
       variants: {
         variant: {
@@ -683,11 +683,11 @@ const appConfig0 = defineAppConfig({
           }
         },
         {
-          color: "secondary",
+          color: "neutral",
           variant: "pill",
           class: {
-            indicator: "bg-secondary",
-            trigger: "data-[state=active]:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+            indicator: "bg-black",
+            trigger: "data-[state=active]:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           }
         }
       ]
@@ -695,13 +695,13 @@ const appConfig0 = defineAppConfig({
     accordion: {
       slots: {
         root: "space-y-4",
-        item: "border-none bg-tertiary data-[state=open]:bg-primary data-[state=open]:text-white transition-colors",
+        item: "border-none bg-tertiary data-[state=open]:bg-black data-[state=open]:text-white transition-colors",
         header: "flex",
         trigger: "relative cursor-pointer justify-center font-normal text-center text-xl p-4 pr-9",
         content: "data-[state=open]:animate-[accordion-down_200ms_ease-out] data-[state=closed]:animate-[accordion-up_200ms_ease-out] overflow-hidden focus:outline-none",
         body: "p-4 pt-0 text-base",
         leadingIcon: "shrink-0 size-5",
-        trailingIcon: "absolute top-1/2 right-4 -translate-y-1/2 text-secondary ms-[unest] group-data-[state=open]:text-white",
+        trailingIcon: "absolute top-1/2 right-4 -translate-y-1/2 text-black ms-[unest] group-data-[state=open]:text-white",
         label: "text-center break-words"
       },
       variants: {
@@ -1822,7 +1822,7 @@ const _8MmeU36TLeu7DFqxNvo4UQVBMHsbceX4uNIqWfrEz1Q = (function(nitro) {
 
 const rootDir = "/Users/chungquantin/Developer/polkadot-hub-hackathon-website";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub"},{"property":"og:type","content":"website"},{"property":"og:title","content":"Polkadot Hub Hackathon 2026"},{"property":"og:description","content":"A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub"},{"property":"og:image","content":"/og-image.png"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"630"},{"property":"og:site_name","content":"Polkadot Hub Hackathon 2026"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Polkadot Hub Hackathon 2026"},{"name":"twitter:description","content":"A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub"},{"name":"twitter:image","content":"/og-image.png"}],"link":[{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png"}],"style":[],"script":[],"noscript":[],"title":"Polkadot Hub Hackathon 2026","htmlAttrs":{"style":"scroll-behavior: smooth;"}};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub"},{"property":"og:type","content":"website"},{"property":"og:title","content":"Polkadot Hub Hackathon 2026"},{"property":"og:description","content":"A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub"},{"property":"og:image","content":"/images/og-thumbnail.jpg"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"630"},{"property":"og:site_name","content":"Polkadot Hub Hackathon 2026"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Polkadot Hub Hackathon 2026"},{"name":"twitter:description","content":"A 4-week online hackathon designed to discover and accelerate the most promising Web3 builders on Polkadot Hub"},{"name":"twitter:image","content":"/images/og-thumbnail.jpg"}],"link":[{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png"}],"style":[],"script":[],"noscript":[],"title":"Polkadot Hub Hackathon 2026","htmlAttrs":{"style":"scroll-behavior: smooth;"}};
 
 const appRootTag = "div";
 
@@ -1926,7 +1926,22 @@ _K5nLboPc1TUp9lTdwhvRwjm74oonb6qKlIRkQKuNmmE,
 _mJlP9J_vaq6ZHxHG3Z6XygSWd5pwgTep7qXGCVfKrBA
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"1cdc2-ZQ391pwLodZy+4xjq26Boa30Rf8\"",
+    "mtime": "2026-01-14T06:06:31.693Z",
+    "size": 118210,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"691c8-7UZ8ZF2bdEANSd5fs1YXqkvb8EU\"",
+    "mtime": "2026-01-14T06:06:31.693Z",
+    "size": 430536,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));

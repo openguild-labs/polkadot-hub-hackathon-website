@@ -10,11 +10,11 @@ export default defineAppConfig({
       variants: {
         active: {
           true: {
-            childLink: "text-secondary",
+            childLink: "text-black",
           },
           false: {
             link: "text-black",
-            childLink: ["hover:text-secondary", "transition-colors before:transition-colors"],
+            childLink: ["hover:text-gray-600", "transition-colors before:transition-colors"],
           },
         },
       },
@@ -24,7 +24,7 @@ export default defineAppConfig({
           active: false,
           variant: "pill",
           class: {
-            link: ["hover:text-secondary", "hover:font-bold", "transition-colors before:transition-colors"],
+            link: ["hover:text-gray-600", "hover:font-bold", "transition-colors before:transition-colors"],
           },
         },
         {
@@ -32,7 +32,7 @@ export default defineAppConfig({
           variant: "pill",
           active: true,
           class: {
-            link: "text-secondary font-bold",
+            link: "text-black font-bold",
           },
         },
       ],
@@ -57,12 +57,12 @@ export default defineAppConfig({
         {
           color: "primary",
           variant: "solid",
-          class: "text-white hover:bg-linear-to-r from-primary to-[#2D0B69] transition-all ease-linear duration-300",
+          class: "text-white hover:bg-linear-to-r from-primary to-[#006064] transition-all ease-linear duration-300",
         },
         {
           color: "secondary",
           variant: "solid",
-          class: "text-white hover:bg-linear-to-r from-secondary to-[#990F39] transition-all ease-linear duration-300",
+          class: "text-white hover:bg-linear-to-r from-secondary to-[#004d40] transition-all ease-linear duration-300",
         },
       ],
       defaultVariants: {
@@ -74,7 +74,7 @@ export default defineAppConfig({
     tabs: {
       slots: {
         list: "p-0",
-        trigger: "font-vcr-osd-mono cursor-pointer data-[state=inactive]:text-black hover:data-[state=inactive]:not-disabled:text-secondary",
+        trigger: "font-vcr-osd-mono cursor-pointer data-[state=inactive]:text-black hover:data-[state=inactive]:not-disabled:text-gray-600",
       },
       variants: {
         variant: {
@@ -98,11 +98,11 @@ export default defineAppConfig({
           },
         },
         {
-          color: "secondary",
+          color: "neutral",
           variant: "pill",
           class: {
-            indicator: "bg-secondary",
-            trigger: "data-[state=active]:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary",
+            indicator: "bg-black",
+            trigger: "data-[state=active]:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black",
           },
         },
       ],
@@ -110,14 +110,14 @@ export default defineAppConfig({
     accordion: {
       slots: {
         root: "space-y-4",
-        item: "border-none bg-tertiary data-[state=open]:bg-primary data-[state=open]:text-white transition-colors",
+        item: "border-none bg-tertiary data-[state=open]:bg-black data-[state=open]:text-white transition-colors",
         header: "flex",
         trigger: "relative cursor-pointer justify-center font-normal text-center text-xl p-4 pr-9",
         content:
           "data-[state=open]:animate-[accordion-down_200ms_ease-out] data-[state=closed]:animate-[accordion-up_200ms_ease-out] overflow-hidden focus:outline-none",
         body: "p-4 pt-0 text-base",
         leadingIcon: "shrink-0 size-5",
-        trailingIcon: "absolute top-1/2 right-4 -translate-y-1/2 text-secondary ms-[unest] group-data-[state=open]:text-white",
+        trailingIcon: "absolute top-1/2 right-4 -translate-y-1/2 text-black ms-[unest] group-data-[state=open]:text-white",
         label: "text-center break-words",
       },
       variants: {

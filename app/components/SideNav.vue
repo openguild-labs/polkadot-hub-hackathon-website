@@ -12,7 +12,7 @@
       :class="[
         'fixed flex-1 overflow-y-auto px-6 transition-transform duration-300 z-40',
         'lg:relative xl:pl-13 lg:pl-8 lg:pr-0 lg:translate-none lg:h-full lg:flex lg:flex-col lg:justify-end lg:pb-10',
-        'max-lg:top-0 max-lg:right-0 max-lg:w-full max-lg:bg-white max-lg:pb-10',
+        'max-lg:top-0 max-lg:right-0 max-lg:w-full max-lg:bg-background max-lg:pb-10',
         isMenuOpen ? 'translate-x-0' : 'translate-x-full',
       ]"
     >

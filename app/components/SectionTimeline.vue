@@ -1,8 +1,8 @@
 <template>
   <section class="relative pt-16 lg:pt-24 px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-6">
-      <p class="text-secondary font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">MOMENTS THAT MATTER</p>
-      <h2 ref="titleText" class="text-primary">TIMELINE</h2>
+      <p class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">MOMENTS THAT MATTER</p>
+      <h2 ref="titleText" class="text-black">TIMELINE</h2>
     </div>
 
     <div ref="timelineContainer" class="flex gap-3 max-lg:flex-col">
@@ -13,9 +13,9 @@
       >
         <div
           :class="[
-            'lg:bg-linear-to-r from-tertiary to-tertiary group-hover:from-primary group-hover:to-[#3A157C] transition-all duration-300',
-            'bg-primary py-5 px-4 w-full h-full flex-1 flex items-center justify-center  rounded-tr-3xl text-center',
-            'font-space-mono text-sm text-white lg:text-black group-hover:text-white',
+            'lg:bg-black lg:group-hover:bg-tertiary transition-all duration-300',
+            'bg-black py-5 px-4 w-full h-full flex-1 flex items-center justify-center rounded-tr-3xl text-center',
+            'font-space-mono text-sm text-white lg:group-hover:text-black',
           ]"
         >
           <p class="">{{ item.date }}</p>

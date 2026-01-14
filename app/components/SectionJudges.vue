@@ -22,17 +22,17 @@
 
   <section id="judges" class="py-8 lg:py-13 px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-6">
-      <p class="text-secondary font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">Judges and Speakers</p>
-      <h2 ref="titleText" class="text-primary">JUDGED BY ECOSYSTEM EXPERTS & LEADERS</h2>
+      <p class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">Judges and Speakers</p>
+      <h2 ref="titleText" class="text-black">JUDGED BY ECOSYSTEM EXPERTS & LEADERS</h2>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       <a v-for="(judge, index) in judges" :key="index" :href="judge.link || '#'" target="_blank" class="text-center group">
-        <div class="aspect-3/4 rounded mb-4 bg-tertiary overflow-hidden relative judge-image-wrapper">
+        <div class="aspect-3/4 rounded mb-4 bg-black overflow-hidden relative judge-image-wrapper">
           <NuxtImg v-if="judge.image" :src="judge.image" :alt="judge.name" class="judge-image-base w-full h-full object-cover" />
           <NuxtImg v-if="judge.image" :src="judge.image" alt="" class="judge-image-filtered w-full h-full object-cover" aria-hidden="true" />
         </div>
-        <p class="text-secondary text-xl">{{ judge.name }}</p>
+        <p class="text-black text-xl font-medium">{{ judge.name }}</p>
         <p class="text-sm">{{ judge.title }}</p>
       </a>
     </div>
