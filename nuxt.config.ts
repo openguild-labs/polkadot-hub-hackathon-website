@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "/images/og-thumbnail.jpg",
+          content: "/images/logo.png",
         },
         {
           property: "og:image:width",
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "/images/og-thumbnail.jpg",
+          content: "/images/logo.png",
         },
       ],
       link: [
