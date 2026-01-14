@@ -71,65 +71,52 @@ const strategicPartners = [
   {
     logo: "/images/PaperMoonIO.jpg",
     link: "https://x.com/PaperMoonIO",
-    label: "PaperMoon",
+    label: "Papermoon",
   },
   {
-    // velocity labs
-    logo: "/images/v_labs.png",
-    link: "https://x.com/v_labs",
-    label: "Velocity Labs",
-  },
-  {
-    // hyperbridge
     logo: "/images/hyperbridge.png",
     link: "https://x.com/hyperbridge",
     label: "Hyperbridge",
   },
   {
-    // devfolio
     logo: "/images/devfolio.png",
-    link: "https://x.com/devfolio",
-    label: "Devfolio",
+    link: "https://x.com/DoraHacks",
+    label: "Dorahack",
   },
   {
-    // Bifrost
     logo: "/images/Bifrost.jpg",
     link: "https://x.com/Bifrost",
     label: "Bifrost",
   },
   {
-    // PolkadotEB
     logo: "/images/PolkadotEB.jpg",
     link: "https://x.com/PolkadotEB",
     label: "Polkadot Event Bounty",
   },
   {
-    // PolkadotUX
-    logo: "/images/polkadot-ui.png",
-    link: "https://x.com/PolkadotUX",
-    label: "Polkadot UI",
-  },
-  {
-    // Magentalabs_io
     logo: "/images/magenta-labs.png",
     link: "https://x.com/Magentalabs_io",
     label: "Magenta Labs",
   },
   {
-    // ChaoticApp
     logo: "/images/ChaoticApp.jpg",
     link: "https://x.com/ChaoticApp",
-    label: "ChaoticApp / DotMemo",
+    label: "ChaoticApp / Dotmemo",
   },
   {
     logo: "/images/R3_2.png",
-    link: "https://www.youtube.com/channel/UCWo2r3wA6brw3ztr-JmzyXA",
+    link: "https://x.com/OneBlock_",
     label: "OneBlock+",
   },
   {
     logo: "/images/R5_6.png",
     link: "https://x.com/Edgetributors",
-    label: "Edgetributors SubDAO",
+    label: "Edgetributors",
+  },
+  {
+    logo: "/images/BlockDevId.png",
+    link: "https://x.com/blockdev_id",
+    label: "BlockDevId",
   },
 ];
 

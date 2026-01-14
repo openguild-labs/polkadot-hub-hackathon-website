@@ -16,7 +16,7 @@
     <div class="mb-4 lg:mb-6">
       <div class="inline-flex bg-black p-2">
         <span
-          class="font-minecraftia text-primary text-xl lg:text-2xl leading-none"
+          class="font-minecraftia text-white text-xl lg:text-2xl leading-none"
           >POLKADOT SOLIDITY</span
         >
       </div>
@@ -71,7 +71,7 @@
       </div>
 
       <!-- Date -->
-      <p class="text-black text-lg lg:text-2xl font-semibold">
+      <p class="text-black text-lg lg:text-2xl font-normal">
         Feb 15, 2026 - Mar 24, 2026
       </p>
 
@@ -80,8 +80,6 @@
         A 4-week online hackathon designed to discover and accelerate the most
         promising Web3 builders on Polkadot Hub
       </p>
-
-      <div class="max-sm:hidden w-1/3 h-7 bg-tertiary opacity-75" />
 
       <!-- Action Buttons -->
       <div class="flex items-stretch gap-4 mb-4!">
@@ -98,7 +96,7 @@
             to="#winners"
             color="primary"
             variant="outline"
-            class="grow w-full border-primary! text-primary! hover:bg-primary/10!"
+            class="grow w-full bg-primary! text-white!"
           >
             Workshops Calendar
           </UButton>
@@ -106,11 +104,26 @@
         <div class="sm:hidden flex-1 flex bg-tertiary opacity-75" />
       </div>
 
-      <!-- Footer Credits -->
-      <div class="">
-        <p class="text-sm">
-          Made possible by OpenGuild | Web3 Foundation | Polkadot
-        </p>
+      <!-- Footer Credits with Organizer Logos -->
+      <div class="flex flex-wrap items-center gap-4 lg:gap-6">
+        <span class="text-sm lg:text-base font-medium">Made possible by</span>
+        <NuxtImg
+          src="/images/organizer-openguild.png"
+          alt="OpenGuild"
+          class="h-4 lg:h-8 w-auto object-contain"
+        />
+        <span class="text-sm lg:text-base">x</span>
+        <NuxtImg
+          src="/images/organizer-web3foundation.png"
+          alt="Web3 Foundation"
+          class="h-4 lg:h-6 w-auto object-contain"
+        />
+        <span class="text-sm lg:text-base">x</span>
+        <NuxtImg
+          src="/images/organizer-polkadot.png"
+          alt="Polkadot"
+          class="h-4 lg:h-6 w-auto object-contain"
+        />
       </div>
     </div>
 

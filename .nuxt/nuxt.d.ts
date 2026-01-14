@@ -1,6 +1,6 @@
 /// <reference types="@nuxt/ui" />
-/// <reference types="@nuxt/image" />
 /// <reference types="@nuxt/eslint" />
+/// <reference types="@nuxt/image" />
 /// <reference types="@nuxtjs/mdc" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />

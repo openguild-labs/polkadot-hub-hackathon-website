@@ -1,7 +1,11 @@
 <template>
   <section class="relative pt-16 lg:pt-24 px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-6">
-      <p class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase">MOMENTS THAT MATTER</p>
+      <p
+        class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase"
+      >
+        MOMENTS THAT MATTER
+      </p>
       <h2 ref="titleText" class="text-black">TIMELINE</h2>
     </div>
 
@@ -13,7 +17,7 @@
       >
         <div
           :class="[
-            'lg:bg-black lg:group-hover:bg-tertiary transition-all duration-300',
+            'lg:bg-black lg:group-hover:bg-primary transition-all duration-300',
             'bg-black py-5 px-4 w-full h-full flex-1 flex items-center justify-center rounded-tr-3xl text-center',
             'font-space-mono text-sm text-white lg:group-hover:text-black',
           ]"
@@ -27,10 +31,10 @@
 </template>
 
 <script setup lang="ts">
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const timelineContainer = useTemplateRef<HTMLElement>("timelineContainer")
+const timelineContainer = useTemplateRef<HTMLElement>("timelineContainer");
 
 const timelineItems = [
   {
@@ -57,18 +61,19 @@ const timelineItems = [
     date: "March 24-25",
     description: "Demo Day",
   },
-]
+];
 
 onMounted(() => {
-  if (!timelineContainer.value) return
+  if (!timelineContainer.value) return;
 
-  const timelineItems = timelineContainer.value.querySelectorAll(".timeline-item")
+  const timelineItems =
+    timelineContainer.value.querySelectorAll(".timeline-item");
 
   // Set initial state
   gsap.set(timelineItems, {
     opacity: 0,
     y: 30,
-  })
+  });
 
   // Animate with stagger
   gsap.to(timelineItems, {
@@ -82,10 +87,10 @@ onMounted(() => {
       start: "top 80%",
       once: true,
     },
-  })
-})
+  });
+});
 
 onBeforeUnmount(() => {
-  ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
-})
+  ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+});
 </script>
