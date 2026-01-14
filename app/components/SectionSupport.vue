@@ -79,7 +79,7 @@ const strategicPartners = [
     label: "Hyperbridge",
   },
   {
-    logo: "/images/devfolio.png",
+    logo: "/images/dorahacks.jpg",
     link: "https://x.com/DoraHacks",
     label: "Dorahack",
   },

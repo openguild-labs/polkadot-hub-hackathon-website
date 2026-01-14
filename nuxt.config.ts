@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Polkadot Hub Hackathon 2026",
+      title: "Polkadot Solidity Hackathon 2026",
       htmlAttrs: {
         style: "scroll-behavior: smooth;",
       },
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:title",
-          content: "Polkadot Hub Hackathon 2026",
+          content: "Polkadot Solidity Hackathon 2026",
         },
         {
           property: "og:description",
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:site_name",
-          content: "Polkadot Hub Hackathon 2026",
+          content: "Polkadot Solidity Hackathon 2026",
         },
         // Twitter Card
         {
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:title",
-          content: "Polkadot Hub Hackathon 2026",
+          content: "Polkadot Solidity Hackathon 2026",
         },
         {
           name: "twitter:description",
