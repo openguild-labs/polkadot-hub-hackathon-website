@@ -45,6 +45,8 @@
             <SectionTimeline />
             <SectionPrize />
             <SectionTracks />
+            <SectionVideo />
+            <SectionBlogs />
             <SectionJudges />
             <SectionSupport />
             <SectionConnect id="connect" />

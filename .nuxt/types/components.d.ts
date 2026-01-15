@@ -14,6 +14,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  'SectionBlogs': typeof import("../../app/components/SectionBlogs.vue").default
   'SectionConnect': typeof import("../../app/components/SectionConnect.vue").default
   'SectionFaq': typeof import("../../app/components/SectionFaq.vue").default
   'SectionHero': typeof import("../../app/components/SectionHero.vue").default
@@ -22,6 +23,7 @@ interface _GlobalComponents {
   'SectionSupport': typeof import("../../app/components/SectionSupport.vue").default
   'SectionTimeline': typeof import("../../app/components/SectionTimeline.vue").default
   'SectionTracks': typeof import("../../app/components/SectionTracks.vue").default
+  'SectionVideo': typeof import("../../app/components/SectionVideo.vue").default
   'SectionWhyJoin': typeof import("../../app/components/SectionWhyJoin.vue").default
   'SideNav': typeof import("../../app/components/SideNav.vue").default
   'ProseA': typeof import("../../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/components/prose/A.vue").default
@@ -215,6 +217,7 @@ interface _GlobalComponents {
   'Html': typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/head/runtime/components").Html
   'Body': typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/head/runtime/components").Body
   'NuxtIsland': typeof import("../../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/components/nuxt-island").default
+  'LazySectionBlogs': LazyComponent<typeof import("../../app/components/SectionBlogs.vue").default>
   'LazySectionConnect': LazyComponent<typeof import("../../app/components/SectionConnect.vue").default>
   'LazySectionFaq': LazyComponent<typeof import("../../app/components/SectionFaq.vue").default>
   'LazySectionHero': LazyComponent<typeof import("../../app/components/SectionHero.vue").default>
@@ -223,6 +226,7 @@ interface _GlobalComponents {
   'LazySectionSupport': LazyComponent<typeof import("../../app/components/SectionSupport.vue").default>
   'LazySectionTimeline': LazyComponent<typeof import("../../app/components/SectionTimeline.vue").default>
   'LazySectionTracks': LazyComponent<typeof import("../../app/components/SectionTracks.vue").default>
+  'LazySectionVideo': LazyComponent<typeof import("../../app/components/SectionVideo.vue").default>
   'LazySectionWhyJoin': LazyComponent<typeof import("../../app/components/SectionWhyJoin.vue").default>
   'LazySideNav': LazyComponent<typeof import("../../app/components/SideNav.vue").default>
   'LazyProseA': LazyComponent<typeof import("../../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/components/prose/A.vue").default>

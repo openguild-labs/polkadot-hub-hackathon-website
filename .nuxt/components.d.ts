@@ -14,6 +14,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const SectionBlogs: typeof import("../app/components/SectionBlogs.vue").default
 export const SectionConnect: typeof import("../app/components/SectionConnect.vue").default
 export const SectionFaq: typeof import("../app/components/SectionFaq.vue").default
 export const SectionHero: typeof import("../app/components/SectionHero.vue").default
@@ -22,6 +23,7 @@ export const SectionPrize: typeof import("../app/components/SectionPrize.vue").d
 export const SectionSupport: typeof import("../app/components/SectionSupport.vue").default
 export const SectionTimeline: typeof import("../app/components/SectionTimeline.vue").default
 export const SectionTracks: typeof import("../app/components/SectionTracks.vue").default
+export const SectionVideo: typeof import("../app/components/SectionVideo.vue").default
 export const SectionWhyJoin: typeof import("../app/components/SectionWhyJoin.vue").default
 export const SideNav: typeof import("../app/components/SideNav.vue").default
 export const ProseA: typeof import("../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/components/prose/A.vue").default
@@ -215,6 +217,7 @@ export const Head: typeof import("../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler
 export const Html: typeof import("../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/head/runtime/components").Html
 export const Body: typeof import("../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/head/runtime/components").Body
 export const NuxtIsland: typeof import("../node_modules/.pnpm/nuxt@4.2.2_@vue+compiler-sfc@3.5.26_eslint@9.39.2_typescript@5.9.3_vite@7.3.0/node_modules/nuxt/dist/app/components/nuxt-island").default
+export const LazySectionBlogs: LazyComponent<typeof import("../app/components/SectionBlogs.vue").default>
 export const LazySectionConnect: LazyComponent<typeof import("../app/components/SectionConnect.vue").default>
 export const LazySectionFaq: LazyComponent<typeof import("../app/components/SectionFaq.vue").default>
 export const LazySectionHero: LazyComponent<typeof import("../app/components/SectionHero.vue").default>
@@ -223,6 +226,7 @@ export const LazySectionPrize: LazyComponent<typeof import("../app/components/Se
 export const LazySectionSupport: LazyComponent<typeof import("../app/components/SectionSupport.vue").default>
 export const LazySectionTimeline: LazyComponent<typeof import("../app/components/SectionTimeline.vue").default>
 export const LazySectionTracks: LazyComponent<typeof import("../app/components/SectionTracks.vue").default>
+export const LazySectionVideo: LazyComponent<typeof import("../app/components/SectionVideo.vue").default>
 export const LazySectionWhyJoin: LazyComponent<typeof import("../app/components/SectionWhyJoin.vue").default>
 export const LazySideNav: LazyComponent<typeof import("../app/components/SideNav.vue").default>
 export const LazyProseA: LazyComponent<typeof import("../node_modules/.pnpm/@nuxt+ui@4.2.1_embla-carousel@8.6.0_typescript@5.9.3_vite@7.3.0_vue-router@4.6.4_vue@3.5.26/node_modules/@nuxt/ui/dist/runtime/components/prose/A.vue").default>
