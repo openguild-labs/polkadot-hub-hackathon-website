@@ -1,5 +1,5 @@
 <template>
-  <section id="video" class="py-8 lg:py-13 lg:px-18 lg:pl-0!">
+  <section id="video" class="py-8 lg:py-13 px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-6">
       <p
         class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase"

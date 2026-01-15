@@ -1,5 +1,5 @@
 <template>
-  <section id="blogs" class="py-8 lg:py-13 sm:px-5 md:px-10 lg:px-18 lg:pl-0!">
+  <section id="blogs" class="py-8 lg:py-13 px-5 md:px-10 lg:px-18 lg:pl-0!">
     <div class="text-center mb-8">
       <p
         class="text-black font-vcr-osd-mono lg:text-xl max-sm:text-sm lg:mb-2 uppercase"
@@ -11,7 +11,7 @@
 
     <div
       ref="blogsContainer"
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:max-w-[95%] mx-auto"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:max-w-[95%] mx-auto"
     >
       <a
         v-for="(blog, index) in blogs"
@@ -28,11 +28,11 @@
         </div>
 
         <!-- Card content -->
-        <div class="p-5">
-          <h4 class="font-space-grotesk font-semibold text-black text-lg mb-3 group-hover:text-primary transition-colors line-clamp-2">
+        <div class="p-4 md:p-5">
+          <h4 class="font-space-grotesk font-semibold text-black text-base md:text-lg mb-2 md:mb-3 group-hover:text-primary transition-colors line-clamp-2">
             {{ blog.title }}
           </h4>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+          <p class="text-gray-600 text-xs md:text-sm mb-3 md:mb-4 line-clamp-3">
             {{ blog.description }}
           </p>
 
@@ -55,12 +55,12 @@
     </div>
 
     <!-- View all link -->
-    <div class="text-center mt-8">
+    <div class="text-center mt-6 md:mt-8">
       <a
         href="https://openguild.wtf/blog"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 px-6 py-3 bg-black text-white font-vcr-osd-mono text-sm uppercase hover:bg-primary transition-colors"
+        class="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 md:py-3 bg-black text-white font-vcr-osd-mono text-xs md:text-sm uppercase hover:bg-primary transition-colors"
       >
         <span>VIEW ALL POSTS</span>
         <span class="animate-pulse">→</span>

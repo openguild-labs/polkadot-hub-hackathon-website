@@ -42,7 +42,7 @@
           </div>
 
           <div
-            class="yearBar sm:hidden absolute bottom-7 right-0 w-[170px] h-4 bg-gray-300 max-w-1/2"
+            class="yearBar sm:hidden absolute -bottom-1 left-0 w-[170px] h-3 bg-gray-300"
             style="width: 0"
           />
         </h1>

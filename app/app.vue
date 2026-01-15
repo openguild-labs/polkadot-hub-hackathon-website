@@ -1,5 +1,5 @@
 <template>
-  <UApp class="min-h-screen bg-background antialiased">
+  <UApp class="min-h-screen bg-background antialiased overflow-x-hidden">
     <!-- Noise Background Overlay -->
     <div class="fixed inset-0 z-0 pointer-events-none">
       <NuxtImg
