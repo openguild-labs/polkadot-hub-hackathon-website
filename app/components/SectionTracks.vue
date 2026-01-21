@@ -107,10 +107,14 @@ const tabItems = [
   },
   {
     label: "TRACK 2",
-    title: "PVM Smart Contract",
+    title: "PVM Smart Contracts",
     description:
-      "Build decentralized applications using PolkaVM smart contracts on Polkadot Hub.",
-    categories: ["DeFi / Stablecoin-enabled dapps", "AI-powered dapps"],
+      "Unlock the speed and power of Polkadot Virtual Machine",
+    categories: [
+      "PVM-experiments. Call Rust or C++ libraries from Solidity",
+      "Applications using Polkadot native Assets",
+      "Accessing Polkadot native functionality - build with precompiles",
+    ],
   },
 ];
 
