@@ -93,7 +93,8 @@
             Register as Hacker
           </UButton>
           <UButton
-            to="#winners"
+            to="https://luma.com/openguildcalendar"
+            target="_blank"
             color="primary"
             variant="outline"
             class="grow w-full bg-primary! text-white!"
