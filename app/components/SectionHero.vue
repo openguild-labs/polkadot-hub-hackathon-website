@@ -77,8 +77,8 @@
 
       <!-- Description -->
       <p class="lg:text-lg max-w-[400px]">
-        A 4-week online hackathon designed to discover and accelerate the most
-        promising Web3 builders on Polkadot Hub
+        A 6-week online hackathon designed to discover and accelerate the most
+        promising Web3 builders on Polkadot Hub.
       </p>
 
       <!-- Action Buttons -->

@@ -6,9 +6,9 @@
       >
         JOIN NOW
       </p>
-      <h2 ref="titleText" class="text-black">WHY JOINING HACKATHON 2026</h2>
+      <h2 ref="titleText" class="text-black">WHY JOIN THE 2026 HACKATHON?</h2>
       <p class="mt-2 sm:text-sm text-xs sm:max-w-lg max-w-xs mx-auto">
-        An hackathon where skills prioritized assessment for Ecosystem Grants,
+        A hackathon where skills are prioritized for assessment for Ecosystem Grants,
         including further acceleration program by OpenGuild.
       </p>
     </div>
@@ -53,13 +53,13 @@ const cards = [
     image: "/images/Online.webp",
     alt: "Completely Online",
     title: "Completely Online",
-    description: String.raw`\ Build from Everywhere`,
+    description: String.raw`\ Build from Anywhere`,
   },
   {
     image: "/images/Laptop.webp",
     alt: "Mentorship",
     title: "Mentorship",
-    description: String.raw`\ 24/7 Support to get your product shipped`,
+    description: String.raw`\ 24/7 Support to help you ship your product`,
   },
 ];
 

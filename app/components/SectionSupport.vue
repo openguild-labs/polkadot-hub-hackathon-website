@@ -81,7 +81,7 @@ const strategicPartners = [
   {
     logo: "/images/dorahacks.jpg",
     link: "https://x.com/DoraHacks",
-    label: "Dorahack",
+    label: "DoraHacks",
   },
   {
     logo: "/images/Bifrost.jpg",

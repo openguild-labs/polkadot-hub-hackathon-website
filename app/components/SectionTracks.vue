@@ -67,7 +67,7 @@
                   >
                     HM
                   </div>
-                  <span class="text-base">Honorary Mentions (x6)</span>
+                  <span class="text-base">Honorable Mentions (x6)</span>
                 </div>
                 <div class="flex-1 h-px bg-gray-300 mx-2"></div>
                 <span class="font-medium text-lg">$500 each</span>

@@ -41,7 +41,7 @@
         <div class="flex flex-row lg:gap-6 gap-4 lg:flex-col max-lg:items-end">
           <h3 class="text-7xl font-vcr-osd-mono">$30K</h3>
           <p class="lg:text-sm sm:text-xs text-[10px]">
-            And other special packages to maximum award the most talented
+            And other special packages to maximize awards for the most talented
             projects, including Ecosystem Grant Subsidies.
           </p>
         </div>

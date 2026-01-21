@@ -34,7 +34,7 @@ const navigationItems = computed<NavigationMenuItem[]>(() => [
     target: "_blank",
   },
   {
-    label: "Find Teamates",
+    label: "Find Teammates",
     to: "https://build.openguild.wtf/signin",
     target: "_blank",
   },

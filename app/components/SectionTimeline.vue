@@ -39,7 +39,7 @@ const timelineContainer = useTemplateRef<HTMLElement>("timelineContainer");
 const timelineItems = [
   {
     date: "January 5",
-    description: "Launch Official Promotion",
+    description: "Official Promotion Launch",
   },
   {
     date: "January 5 until February 15",
@@ -51,7 +51,7 @@ const timelineItems = [
   },
   {
     date: "March 1",
-    description: "Begin Hacking Period",
+    description: "Hacking Period Begins",
   },
   {
     date: "March 20",

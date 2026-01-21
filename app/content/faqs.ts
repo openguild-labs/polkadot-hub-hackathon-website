@@ -33,14 +33,14 @@ You do not need prior Polkadot experience.`,
   },
   {
     label: "Is the hackathon online or offline?",
-    content: `Yes, all the activations - workshops, hacking, and mentoring - are online`,
+    content: `The hackathon is fully online. All activities—workshops, hacking, and mentoring—take place virtually.`,
   },
   {
     label: "When's the hackathon happening?",
-    content: `- Start opening register - February 16, 2026
-- Start the hacking period - March 1, 2026
-- End projects submission - March 20, 2026
-- Demoday, March 24,25, 2026`,
+    content: `- Registration Opens: February 16, 2026
+- Hacking Period Starts: March 1, 2026
+- Project Submission Deadline: March 20, 2026
+- Demo Day: March 24-25, 2026`,
   },
   {
     label: "What's happening during the hackathon?",
@@ -53,16 +53,16 @@ You do not need prior Polkadot experience.`,
   },
   {
     label: "What can I build during the hackathon?",
-    content: `You can build anything relating to AI, DeFi, and consumer products that solve a particular problems on application layer. However, we encourage you find and build an idea come from [this curated list](https://build.openguild.wtf/explore-ideas?category=all) that we prepared that generate better value proposition for the ecosystem.`,
+    content: `You can build anything related to AI, DeFi, and consumer products that solve particular problems on the application layer. However, we encourage you to find and build an idea from [this curated list](https://build.openguild.wtf/explore-ideas?category=all) that we prepared, which generates better value for the ecosystem.`,
   },
   {
     label: "What's the opportunity for winning teams?",
-    content: `Join the 30,000 USD prize pool
+    content: `Compete for a share of the $30,000 USD prize pool!
 
-- Get supported with application curation by OpenGuild for future DeFi Builders Program.
-- To be plugged into the marketing pipeline (social posts, AMAs, newsletters, user acquisition campaigns, meet ups promotion) from Polkadot Officials, Polkadot APAC, OpenGuild, and Local/Ecosystem Partners.
+- Receive application curation support from OpenGuild for the future DeFi Builders Program.
+- Get plugged into the marketing pipeline (social posts, AMAs, newsletters, user acquisition campaigns, meetup promotions) from Polkadot Officials, Polkadot APAC, OpenGuild, and Local/Ecosystem Partners.
 - A dedicated founder-led marketing video campaign.
-- Get prioritized to be assessed audit subsidies via Polkadot Assurance Legion. (If your project is eligible - read more [here](https://dotpal.io/funding/smart_contracts))`,
+- Get prioritized for audit subsidy assessment via Polkadot Assurance Legion. (If your project is eligible—read more [here](https://dotpal.io/funding/smart_contracts))`,
   },
   {
     label: "What's the judging criteria?",
@@ -75,15 +75,15 @@ You do not need prior Polkadot experience.`,
 - Team execution and presentation`,
   },
   {
-    label: "Which techstack can I use?",
-    content: `Depending on your stack:
+    label: "Which tech stack can I use?",
+    content: `Depending on your preferences:
 
-- Solidity (EVM) - focused programming languages
+- Solidity (EVM-compatible smart contracts)
 - Frontend: React, Next.js, Vue, etc.`,
   },
   {
     label: "Do I need to be present at Demo Day to win?",
-    content: `Yes, as the Hackathon is online, you have to present at the DemoDay, have a strong pitchdeck, open camera of the presentor, to be eligible to win the hackathon.`,
+    content: `Yes. Since the hackathon is online, you must present at Demo Day, have a strong pitch deck, and turn on your camera to be eligible to win.`,
   },
   {
     label: "How do I get help during the hackathon?",
@@ -92,7 +92,7 @@ You do not need prior Polkadot experience.`,
 - OpenGuild's Discord help channels
 - Polkadot Hackathon Telegram chat
 - Weekly office hours
-- Direct mentor feedback through any platforms that fit you.
+- Direct mentor feedback through your preferred platform.
 - Community AMAs`,
   },
   {
